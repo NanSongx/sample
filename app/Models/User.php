@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -21,9 +21,11 @@ class User extends Authenticatable
     /**
      * The attributes that should be hidden for arrays.
      *
-     * @var array
+     * @var arrayÏ
      */
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $table = 'users';
 }
